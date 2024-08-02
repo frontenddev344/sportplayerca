@@ -334,4 +334,66 @@ img {
 .hockey-text {
     padding-bottom: 50px;
 }
+.top-text p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #1f1f1f;
+}
+.sale-img {
+    height: 300px;
+    width: 100%;
+    background: #f6f6f6;
+}
+.sale-img a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.sale-text h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1f1f1f;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+.price p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 0;
+}
+.price p span{
+    color: #db2e53;
+    font-size: 18px;
+}
+.offer p {
+    font-size: 18px;
+    color: #db2e53;
+    margin-bottom: 0;
+}
+.offer p span{
+    font-size: 16px;
+    color: #a0a0a2;
+    text-decoration: line-through;
+}
+.buy-now a {
+    padding: 10px 35px;
+    background-color: #ea354a;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #ea354a;
+}
+.sale-text {
+    padding: 20px 0;
+}
+.sale-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.sale-main .col-md-4 {
+    margin-bottom: 30px;
+}
 /* sub pages css end */
