@@ -255,7 +255,7 @@ img {
 .sub-banner{
     height: 500px;
 }
-.hockey-card{
+/* .hockey-card{
     background-image: url(../images/link-Card-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -293,6 +293,45 @@ img {
     height: 100%;
     background-color: #000;
     opacity: 0.2;
+} */
+.hockey-card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    height: 100%;
+    position: relative;
 }
-
+.hockey-img {
+    height: 300px;
+    margin-bottom: 10px;
+}
+.hockey-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.read-more a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #db2e53;
+    color: #fff;
+    font-size: 16px;
+}
+.hockey-text h3 {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.hockey-text p{
+    font-size: 18px;
+    line-height: 1.4;
+    color: #1f1f1f;
+}
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.hockey-text {
+    padding-bottom: 50px;
+}
 /* sub pages css end */
