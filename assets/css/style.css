@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* global css start here */
+html{
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.pt-50 {
+    padding-top: 50px ;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.ptb-50 {
+    padding: 50px 0;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.ptb-70 {
+    padding: 70px 0;
+}
+/* global css end here */
+
+
+/* header section css start */
+.site-logo img {
+    max-width: 300px;
+}
+.main-nav ul li a, .main-nav ul li  span {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #3b3657;
+    font-weight: 500;
+}
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px 0;
+}
+.main-nav ul li  span {
+    padding-left: 5px;
+}
+.main-nav ul li {
+    position: relative;
+}
+.menu-drop ul {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 5px;
+    
+}
+.menu-drop {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 200px;
+    background: #eeeeee;
+    padding: 10px;
+}
+.menu-drop{
+    display: none;
+}
+/* header section css end */
+/* banner section css start  */
+    .site-banner{
+        background-image: url(../images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+        position: relative;
+    }
+    .site-banner::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .about-img {
+        height: 450px;
+    }
+    .about-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .about-sec .row {
+        align-items: center;
+    }
+    .about-text p {
+        font-size: 18px;
+        color: #1f1f1f;
+        margin-bottom: 10px;
+    }
+/* banner section css end */
+
+
+/* link card css start */
+.link-wrap{
+    background-image: url(../images/link-Card-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.link-wrap a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.link-text h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1.1;
+    position: relative;
+}
+.link-wrap a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+
+}
+/* link card css end */
+
+/* footer section css start */
+.site-footer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-logo img {
+    max-width: 300px;
+}
+.footer-abt p {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 0;
+}
+.footer-abt {
+    margin-top: 10px;
+}
+.footer-abt p strong {
+    display: block;
+}
+.footer-heading h3 {
+    font-size: 25px;
+    color: #000;
+}
+.footer-heading {
+    margin-bottom: 20px;
+}
+.footer-links ul li a {
+    font-size: 18px;
+    color: #1f1f1f;
+    text-transform: capitalize;
+}
+.footer-links ul li {
+    padding: 3px 0;
+}
+.social-link ul li a span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border: 1px solid #e9344a;
+    color: #e9344a;
+}
+.social-link ul li a span:hover{
+    background-color: #e9344a;
+    color: #fff;
+}
+.social-link ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #1f1f1f;
+}
+.social-link ul li{
+    padding: 5px 0;
+}
+.copy-right{
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+.copy-right p{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #1f1f1f;
+}
+/* footer section css end */
+
+/* sub pages css start */
+.sub-banner{
+    height: 500px;
+}
+.hockey-card{
+    background-image: url(../images/link-Card-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 12px 0;
+}
+.hockey-card a{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+.hockey-card a span{
+    position: relative;
+    display: block;
+    background: #dd2f51;
+    width: 100%;
+    text-align: center;
+}
+.hockey-card a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+/* sub pages css end */
