@@ -1,0 +1,98 @@
+@media(max-width:1200px){
+    html{
+        font-size: 15px;
+    }
+    .site-logo img {
+        max-width: 250px;
+    }
+    .site-banner {
+        height: 450px;
+    }
+    .link-wrap {
+        height: 300px;
+    }
+    .link-text h4 {
+        font-size: 1.575rem;
+    }
+    .site-banner.sub-banner {
+        height: 400px;
+    }
+}
+
+@media(max-width:992px){
+    html{
+        font-size: 14px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .link-wrap {
+        margin-bottom: 20px;
+    }
+  
+}
+
+@media(max-width:850px){
+    .about-sec .row {
+        flex-direction: column;
+    }
+    .about-sec .col-md-6{
+        width: 100%;
+    }
+    .about-img {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    .hockey-main .row{
+        flex-direction: column;
+    }
+    .hockey-main .col-md-6, .hockey-main .col-md-4 {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .contact-main .col-md-6 {
+        width: 100%;
+    }
+    .contact-main  .row{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width:767px){
+    .footer-heading {
+        margin-bottom: 5px;
+    }
+    .site-footer .col-md-3{
+        margin: 10px 0;
+    }
+    .banner-text h2 {
+        font-size: 2.1125rem;
+    }
+}
+@media(max-width:575px){
+    .hockey-img {
+        height: 250px;
+    }
+    .site-banner.sub-banner {
+        height: 350px;
+    }
+    .hockey-card {
+        padding: 15px;
+    }
+    .sale-img {
+        height: 250px;
+    }
+    .form-group input {
+        height: 45px;
+    }
+    .form-group textarea{
+        height: 220px;
+    }
+}
+@media(max-width:375px){
+    .about-img {
+        height: 300px;
+    }
+    .footer-logo img {
+        max-width: 250px;
+    }
+}
