@@ -85,6 +85,8 @@ img {
 }
 .main-nav ul li  span {
     padding-left: 5px;
+    cursor: pointer;
+
 }
 .main-nav ul li {
     position: relative;
