@@ -501,6 +501,12 @@ div#box4 {
     color: #fff;
     font-size: 1rem;
     border: 1px solid #db2e53;
+    transition: all 0.3s linear;
+
+}
+.form-group button:hover{
+    background-color: transparent;
+    color: #db2e53;
 }
 .contact-text h3 {
     font-size: 1.5625rem;
