@@ -36,6 +36,26 @@ $(window).scroll(function(){
 });
 
 
-AOS.init({
-    duration: 1200,
-  })
+// AOS.init({
+//     duration: 1200,
+//   })
+
+
+
+  $("#drop-1").click(function(){
+    $("#box1").toggleClass("showMenu");
+  });
+
+  $("#drop-2").click(function(){
+    $("#box2").toggleClass("showMenu");
+  });
+
+  $("#drop-3").click(function(){
+    $("#box3").toggleClass("showMenu");
+  });
+  $("#drop-4").click(function(){
+    $("#box4").toggleClass("showMenu");
+  });
+  $("#drop-5").click(function(){
+    $("#box5").toggleClass("showMenu");
+  });
