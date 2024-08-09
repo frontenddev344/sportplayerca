@@ -42,20 +42,44 @@ $(window).scroll(function(){
 
 
 
-  $("#drop-1").click(function(){
-    $("#box1").toggleClass("showMenu");
-  });
+  // $("#drop-1").click(function(){
+  //   $("#box1").toggleClass("showMenu");
+  // });
 
-  $("#drop-2").click(function(){
-    $("#box2").toggleClass("showMenu");
-  });
+  // $("#drop-2").click(function(){
+  //   $("#box2").toggleClass("showMenu");
+  // });
 
-  $("#drop-3").click(function(){
-    $("#box3").toggleClass("showMenu");
-  });
-  $("#drop-4").click(function(){
-    $("#box4").toggleClass("showMenu");
-  });
-  $("#drop-5").click(function(){
-    $("#box5").toggleClass("showMenu");
+  // $("#drop-3").click(function(){
+  //   $("#box3").toggleClass("showMenu");
+  // });
+  // $("#drop-4").click(function(){
+  //   $("#box4").toggleClass("showMenu");
+  // });
+  // $("#drop-5").click(function(){
+  //   $("#box5").toggleClass("showMenu");
+  // });
+
+  $(document).ready(function() {
+    $(".dropdowns").click(function(event) {
+      // Prevent the event from propagating to the document
+      event.stopPropagation();
+  
+      // Close any previously opened menus
+      $(".box").removeClass("showMenu");
+  
+      // Open the clicked menu
+      var targetBox = $(this).data("target");
+      $("#" + targetBox).toggleClass("showMenu");
+    });
+  
+    // Remove 'showMenu' class when clicking anywhere else on the document
+    $(document).click(function() {
+      $(".box").removeClass("showMenu");
+    });
+  
+    // Prevent the click inside the box from closing the menu
+    $(".box").click(function(event) {
+      event.stopPropagation();
+    });
   });
