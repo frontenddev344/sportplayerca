@@ -543,7 +543,7 @@ div#box4 {
     width: 85%;
 }
 .privacy-wrap p{
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin-bottom: 10px;
     color: #1f1f1f;
     
@@ -578,3 +578,39 @@ div#box4 {
     margin: 20px 0;
 }
 /* sub pages css end */
+
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #3b3657;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-popup p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+
+.cookie-btn {
+    background-color: #dc2e52;
+  border: 2px solid #dc2e52;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-btn:hover {
+    background-color: transparent;
+    color: #dc2e52;
+}

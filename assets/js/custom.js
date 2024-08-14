@@ -60,26 +60,35 @@ $(window).scroll(function(){
   //   $("#box5").toggleClass("showMenu");
   // });
 
+  
+
   $(document).ready(function() {
     $(".dropdowns").click(function(event) {
-      // Prevent the event from propagating to the document
-      event.stopPropagation();
-  
-      // Close any previously opened menus
-      $(".box").removeClass("showMenu");
-  
-      // Open the clicked menu
-      var targetBox = $(this).data("target");
-      $("#" + targetBox).toggleClass("showMenu");
+        // Prevent the event from propagating to the document
+        event.stopPropagation();
+
+        // The specific dropdown box related to the clicked dropdown
+        var targetBox = $(this).data("target");
+
+        // Check if the clicked dropdown's box is already shown
+        var isBoxVisible = $("#" + targetBox).hasClass("showMenu");
+
+        // Close all open boxes
+        $(".box").removeClass("showMenu");
+
+        // If the clicked box was not already shown, show it
+        if (!isBoxVisible) {
+            $("#" + targetBox).toggleClass("showMenu");
+        }
     });
-  
-    // Remove 'showMenu' class when clicking anywhere else on the document
+
+    // Remove 'showMenu' class from all boxes when clicking anywhere else on the document
     $(document).click(function() {
-      $(".box").removeClass("showMenu");
+        $(".box").removeClass("showMenu");
     });
-  
+
     // Prevent the click inside the box from closing the menu
     $(".box").click(function(event) {
-      event.stopPropagation();
+        event.stopPropagation();
     });
-  });
+});

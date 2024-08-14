@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <title>Home page</title>
+
+    <style>
+    </style>
   </head>
   <body>
 
@@ -145,7 +148,13 @@
 
     <!-- banner section start -->
         <div class="site-banner">
-
+          <div class="banner-wrap">
+            <div class="banner-text">
+                <h2>
+                 Sport Player Ca
+                </h2>
+            </div>
+        </div>
         </div>
 
     <!-- banner section end -->
@@ -374,9 +383,29 @@
       <!-- footer section end -->
 
 
+      <div id="cookiePopup" class="cookie-popup">
+        <p>At Sport Player CA, we use cookies to enhance your shopping experience. Cookies help us understand your preferences and improve our website's functionality. By continuing to browse our site, you agree to our use of cookies. You can adjust your cookie settings in your browser at any time. For more information, please refer to our Privacy Policy.</p>
+        <button id="acceptCookies" class="cookie-btn">Accept</button>
+    </div>
+
+
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
- 
+    <script>
+      document.getElementById('acceptCookies').addEventListener('click', function() {
+    document.getElementById('cookiePopup').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true');
+});
+
+window.onload = function() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookiePopup').style.display = 'flex';
+    } else {
+        document.getElementById('cookiePopup').style.display = 'none';
+    }
+}
+
+    </script>
   </body>
 </html>

@@ -104,6 +104,11 @@
     .contact-main  .row{
         flex-direction: column-reverse;
     }
+    .cookie-popup {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
 }
 @media(max-width:767px){
     .footer-heading {
@@ -145,7 +150,10 @@
     .menu-drop, .sub-menu-drop, .main-nav ul li {
         width: 100%;
     }
-  
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 @media(max-width:375px){
     .about-img {
