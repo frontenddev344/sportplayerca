@@ -162,7 +162,7 @@ div#box4 {
 /* header section css end */
 /* banner section css start  */
 .site-banner {
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/home-page-banner-image3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -211,10 +211,56 @@ div#box4 {
 
 /* banner section css end */
 
+/* Banner Style Image Section CSS Start */
+.banner-style-image-section .container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.banner-style-wrapper{
+    position: relative;
+    height: 450px;
+}
+.banner-style-image{
+    height: 100%;
+    width: 100%;
+}
+.banner-style-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-style-text {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+     margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0/70%);
+    background-blend-mode: multiply;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-style-text p{
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+
+
+/* Banner Style Image Section CSS End */
 
 /* link card css start */
 .link-wrap {
-    background-image: url(../images/link-Card-1.jpg);
+    background-image: url(../images/ice-hockey-gears.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
