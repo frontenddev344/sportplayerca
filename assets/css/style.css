@@ -218,14 +218,14 @@ div#box4 {
     padding: 50px 0;
     margin: 60px 15px;
     border-radius: 10px;
-      background-image: url("../images/soccer-banner-image.jpg");
+      background-image: url("../images/snowboarding-banner-image.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0 0 0/70%);
     background-blend-mode: multiply;
-     height: 350px;
+     height: 400px;
      display: flex;
 align-items: center;
      justify-content: center;
