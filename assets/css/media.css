@@ -97,6 +97,14 @@
     .banner-style-text p {
         font-size: 18px;
     }
+    .cookie-popup {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .cookie-popup p {
+        width: 100%;
+    }
 }
 
 @media(max-width:850px) {
